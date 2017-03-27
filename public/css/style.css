@@ -1,0 +1,43 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+	padding: 20px;
+	background-color: #F6F7F8;
+	color: #333;
+}
+
+#app {
+	width: 960px;
+	display: flex;
+	flex-direction: column;
+}
+
+#app > select {
+	height: 50px;
+	border: solid 1px #dfdfdf;
+	border-radius: 3px;
+	border-bottom: none;
+}
+
+#app > img {
+	max-width: 100%;
+}
+
+nav {
+	margin-top: 15px;
+}
+
+nav ul li {
+	display:inline;
+}
+nav ul li:not(:last-child)::after {
+  content: "⁄";
+  display: inline-block;
+  padding: 0 5px 0 10px;
+}

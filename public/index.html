@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Dash</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+  <div id="app">
+      <!-- dynamic dungeon select dropdown -->
+      <dungeon-select></dungeon-select>
+      <!-- interactive dungeon map -->
+      <img src="img/the_arcway.jpg" v-on:click="placeDot"/>
+  </div>
+  <footer>
+    <nav>
+      <ul>
+        <li>Made by this guy</li>
+        <li>Share route</li>
+        <li>Something else</li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="https://unpkg.com/vue@2.2.6"></script>
+  <script src="app/main.js"></script>
+</body>
+</html>
