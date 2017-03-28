@@ -1,3 +1,5 @@
+/*	Reset */
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -6,28 +8,80 @@
   list-style: none;
 }
 
+/*	Basics */
+
 body {
+	font-family: Optima, Arial, sans-serif;
 	padding: 20px;
 	background-color: #F6F7F8;
 	color: #333;
 }
 
+/*	Layout */
+
 #app {
 	width: 960px;
-	display: flex;
-	flex-direction: column;
 }
 
-#app > select {
+.row {
+	display: flex;
+	position:relative;
+}
+
+.row > select {
 	height: 50px;
 	border: solid 1px #dfdfdf;
 	border-radius: 3px;
 	border-bottom: none;
+	flex: 3 3 0px;
 }
 
-#app > img {
-	max-width: 100%;
+.row > svg {
+	position:absolute;
+	width: 960px;
+	height: 100%;
 }
+
+.map {
+	flex: 4 4 auto;
+	min-height: 631px;
+}
+
+.map > img {
+	width: 100%;
+}
+
+#percentage_display {
+	font-size: 30px;
+	font-weight: bold;
+	flex: 1 1 0px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*	Map pins */
+
+circle {
+	cursor:pointer;
+	stroke: black;
+	stroke-width: 2px;
+}
+
+.trash {
+	fill: #27ae60;
+}
+
+.boss {
+	fill: #c0392b;
+}
+
+.start {
+	fill: #2980b9;
+}
+
+/*	Footer */
 
 nav {
 	margin-top: 15px;
