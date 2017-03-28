@@ -1,3 +1,7 @@
 # MPlus
 
-Vue / Slim / Sqlite experiment
+Vue | Front-end, interaction
+
+Slim | Back-end, API, DB interaction
+
+SQLite | Dungeon/map data
